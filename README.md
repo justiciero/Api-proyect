@@ -1,2 +1,2 @@
 # Api-proyect
-Nuevo proyecto en donde aprendo a consumir API con fetch
+Nuevo proyecto en donde aprendo a consumir API Rest con JAvascript
