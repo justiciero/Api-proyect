@@ -1,16 +1,26 @@
-const URL = ' https://api.thecatapi.com/v1/images/search';
+const querySrting = [
+    '?',
+    'limit=3',
+].join('');
+
+const URL = `https://api.thecatapi.com/v1/images/search${querySrting}`;
 
 const btn = document.getElementById('btn-recargar');
     document.addEventListener('click', recargar);
 
-const imgRandom = document.getElementById('img-random');
 
 async function recargar(btn){
     try{
         const resultado = await fetch(URL);
         const data = await resultado.json()
-        const img = imgRandom;
-        img.src = data[0].url;
+
+        const img1 = document.getElementById('img-random-1');
+        const img2 = document.getElementById('img-random-2');
+        const img3 = document.getElementById('img-random-3');
+
+        img1.src = data[0].url;
+        img2.src = data[1].url;
+        img3.src = data[2].url;
     } catch(error){
         alert('Este mensaje no se ha podido mostrar por un error');
         console.log(error);

@@ -10,7 +10,7 @@ main{
 }
 
 main .main-div{
-    width: 350px;
+    width: 500px;
     height: auto;
     background-color: aquamarine;
     margin: 30px auto;
@@ -25,10 +25,11 @@ main .main-div h1{
 
 
 main .main-div .pic{
-    width: 300px;
-    height: 250px;
+    width: 190px;
+    height: 130px;
     object-fit: cover;
-    margin: 20px auto;
+    display: inline-block;
+    margin: 20px 0;
 }
 
 main .main-div .pic img{
