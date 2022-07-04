@@ -11,15 +11,44 @@
     
     <main>
         
+        <h1>Michi App</h1>
+        <span id="error"></span>
+
         <div class="main-div">
-            <h1>Imagenes de gatos random</h1>
-            <div class="pic">
-                <img alt="Foto de museo" id="img-random-1">
-                <img alt="Foto de museo" id="img-random-2">
-                <img alt="Foto de museo" id="img-random-3">
-            </div>
-            <div class="btn-class">
-                <button id="btn-recargar">Cargar nueva foto</button>
+            
+            <section class="pic">
+                <div class="text">
+                    <h2>Imagenes de gatos random</h2>
+
+                </div>
+
+                <article>
+                    <div>
+
+                        <img alt="Foto de museo" id="img-random-1">
+                    </div>
+
+                    <button class="favorito like" id="btn1" onclick="saveMichi()"><img src="./dislike2-icon.png"></button>
+                </article>
+                
+                <article>
+                    <div>
+
+                        <img alt="Foto de museo" id="img-random-2">
+                    </div>
+
+                    <button class="favorito like" id="btn2" onclick="saveMichi()"><img src="./dislike2-icon.png"></button>
+                </article>
+
+                <button onclick="LoadRandomMichis()" class="btn1">Recargar</button>
+            </section>
+
+
+            <section id="favorite-michi" class="section-2 pic">
+                <div class="text">
+                    <h2>Imagenes de gatos que te gustaron</h2>
+                </div>
+            </section>
             </div> 
         </div>
 
